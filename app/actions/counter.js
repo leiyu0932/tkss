@@ -1,7 +1,7 @@
 /**
- * Created at 16/5/16.
- * @Author Ling.
- * @Email i@zeroling.com
+ * Created at 17/6/22.
+ * @Author Thunder King Star.
+ * @Email 332793511@qq.com
  */
 export const INCREMENT_COUNTER = () => 'INCREMENT_COUNTER'
 export const DECREMENT_COUNTER = () => 'DECREMENT_COUNTER'

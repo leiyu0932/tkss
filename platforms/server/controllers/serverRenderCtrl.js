@@ -1,7 +1,7 @@
 /**
- * Created at 16/5/20.
- * @Author Ling.
- * @Email i@zeroling.com
+ * Created at 17/6/22.
+ * @Author Thunder King Star.
+ * @Email 332793511@qq.com
  */
 import React from 'react'
 import { RouterContext } from 'react-router'
@@ -33,5 +33,5 @@ export default async (ctx, next, renderProps) => {
     app: renderToString(<Provider store={store}>
       <RouterContext {...renderProps} />
     </Provider>)
-  })  
+  })
 }

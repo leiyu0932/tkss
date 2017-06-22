@@ -1,7 +1,7 @@
 /**
- * Created at 16/4/11.
- * @Author Ling.
- * @Email i@zeroling.com
+ * Created at 17/6/22.
+ * @Author Thunder King Star.
+ * @Email 332793511@qq.com
  */
 import path from 'path'
 
