@@ -1,17 +1,17 @@
 sudo: false
 language: node_js
 node_js:
-  - stable
+- stable
 script:
-  - npm test
-
-# before_install:
-# - openssl aes-256-cbc -K $encrypted_17dfcb7b460d_key -iv $encrypted_17dfcb7b460d_iv
-#   -in id_rsa.enc -out .travis/id_rsa -d
-# - mv .travis/id_rsa ~/.ssh -f
-# - chmod 600 ~/.ssh/id_rsa
-# - eval $(ssh-agent)
-# - ssh-add ~/.ssh/id_rsa
-# - cp .travis/ssh_config ~/.ssh/config
-# after_script:
-# - scp -o StrictHostKeyChecking=no app.js root@works.leiwangxing.com:/root/apps/travistest
+- npm test
+before_install:
+- openssl aes-256-cbc -K $encrypted_ad716207d570_key -iv $encrypted_ad716207d570_iv
+  -in id_rsa.enc -out ./.travis/id_rsa -d
+- mv .travis/id_rsa ~/.ssh -f
+- chmod 600 ~/.ssh/id_rsa
+- eval $(ssh-agent)
+- ssh-add ~/.ssh/id_rsa
+- cp .travis/ssh_config ~/.ssh/config
+after_script:
+- scp -o StrictHostKeyChecking=no public/* root@works.leiwangxing.com:/data/www/tkss/public
+- scp -o StrictHostKeyChecking=no dist/* root@works.leiwangxing.com:/data/www/tkss/dist
