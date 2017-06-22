@@ -13,5 +13,5 @@ before_install:
 - ssh-add ~/.ssh/id_rsa
 - cp .travis/ssh_config ~/.ssh/config
 after_script:
-- scp -o StrictHostKeyChecking=no public/* root@works.leiwangxing.com:/data/www/tkss/public
-- scp -o StrictHostKeyChecking=no dist/* root@works.leiwangxing.com:/data/www/tkss/dist
+- scp -o StrictHostKeyChecking=no -r public/ root@works.leiwangxing.com:/data/www/tkss/
+- scp -o StrictHostKeyChecking=no -r dist/ root@works.leiwangxing.com:/data/www/tkss/
