@@ -1,0 +1,9 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+}
+.ss{
+  min-height: 300px;
+  background-color: #ccc;
+}

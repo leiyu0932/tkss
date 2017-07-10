@@ -14,6 +14,7 @@ export default class Navigation extends Component {
         <li><Link to='/'>首页</Link></li>
         <li><Link to='/cu'>常用网址</Link></li>
         <li><Link to='/counter'>计数器</Link></li>
+        <li><Link to='/3d'>3D旋转</Link></li>
       </ul>
     </nav>)
   }

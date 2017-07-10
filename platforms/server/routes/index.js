@@ -1,7 +1,7 @@
 /**
- * Created at 16/5/19.
- * @Author Ling.
- * @Email i@zeroling.com
+ * Created at 17/6/22.
+ * @Author Thunder King Star.
+ * @Email 332793511@qq.com
  */
 export default async (ctx, next) => {
   // api server through koa-router

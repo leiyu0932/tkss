@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import Navigation from '../components/Navigation'
 import 'normalize.css'
 import '../common/layout.less'
+import '../common/test.css'
 
 class App extends Component {
   render () {

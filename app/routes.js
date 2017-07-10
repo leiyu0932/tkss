@@ -1,7 +1,8 @@
 import App from './containers/App'
+import Home from './components/Home'
 import Website from './components/Website'
 import Counter from './containers/Counter'
-import Home from './components/Home'
+import ThreeD from './components/3d'
 import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 import React from 'react'
 
@@ -12,5 +13,6 @@ export default (
     <Route path="cu" component={Website} />
     <Route path="counter" component={Counter} />
   </Route>
+  <Route path="/3d" component={ThreeD} />
 </Router>
 )
